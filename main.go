@@ -58,7 +58,7 @@ func init() {
 		"AWS":      regexp.MustCompile("AKIA[0-9A-Z]{16}"),
 		"Reddit":   regexp.MustCompile("(?i)reddit.*['|\"][0-9a-zA-Z]{14}['|\"]"),
 		"Heroku":   regexp.MustCompile("(?i)heroku.*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}"),
-		"bits":     regexp.MustCompile("\w{32}"),
+		"bits":     regexp.MustCompile("[a-zA-Z0-9_]{32}"),
 		// "Custom": regexp.MustCompile(".*")
 	}
 	assignRegex = regexp.MustCompile(`(=|:|:=|<-)`)
